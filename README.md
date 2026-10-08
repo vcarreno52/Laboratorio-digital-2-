@@ -100,6 +100,13 @@ endmodule
 ![Sumador 4 bits](Sumador_4bits.png)
 
 
+#### C. Casos de Prueba (Tabla de Validación)
+
+| Caso | Entrada A | Entrada B  | Cin | Salida S| Cout | Operación |
+| :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| **1** | `0101` (5) | `0011` (3) | `0` | `1000` (8) | `0` | Suma básica sin acarreo ($5 + 3 = 8$) |
+| **2** | `1001` (9) | `0111` (7) | `0` | `0000` (0) | `1` | Suma con desbordamiento ($9 + 7 = 16 \rightarrow$ Cout = 1) |
+
 ---
 
 ## 🔬 Parte B
@@ -179,6 +186,13 @@ endmodule
 #### B. Diagrama comportamental Nivel compuertas lógiccas 
 ![Sumador/ restador 4 bits](Sum_res_sal.png)
 
+#### C. Casos de Prueba (Tabla de Validación)
+
+| Caso | Sel | Entrada A ` | Entrada B  | Salida S | Cout | Operación |
+| :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| **1** | `0` (Suma) | `0101` (5) | `0011` (3) | `1000` (8) | `0` | Modo Suma: $5 + 3 = 8$ |
+| **2** | `1` (Resta) | `0111` (7) | `0010` (2) | `0101` (5) | `1` | Modo Resta: $7 - 2 = 5$ |
+| **3** | `1` (Resta) | `0010` (2) | `0101` (5) | `1101` (-3) | `0` | Modo Resta: $2 - 5 = -3$ |
 
 ---
 ## :sparkles: RETO DE DISEÑO :sparkles:
